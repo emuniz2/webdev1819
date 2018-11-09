@@ -1,0 +1,30 @@
+body {
+    background-image: url("http://wallpaperhd.online/upload/images/1521086292085/css-fade-background-css-fade-image-css-fade-in-red-fire-600x350.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+div {
+    border-style: ridge;
+    border-width: 10px;
+    border-color: lightgreen;
+    width: 250px;
+    height: 166.640625px;
+}
+
+h1 {
+    font-size: 75px;
+    text-align: center
+}
+
+#button1 {
+    margin-left: 100px;
+}
+
+#button2 {
+    margin-left: 100px;
+}
+
+#button3 {
+    margin-left: 100px;
+}

@@ -1,0 +1,68 @@
+#h1_color {
+    color: orange;
+}
+
+.notbold {
+    font-weight: normal;
+    font-size: 50%;
+}
+
+.feature {
+    color: red;
+}
+
+.no_underline {
+    text-decoration: none;
+}
+
+.main {
+    background-color: lightblue;
+    box-shadow: 10px 10px black;
+    border-radius: 15px;
+    line-height: 200%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.green {
+    border-width: 3px;
+    border-style: dotted;
+    border-color: green;
+    line-height: 200%;
+}
+
+em {
+    background-color: yellow;
+}
+.secondary {
+    background-color: transparent;
+}
+
+.noindent {
+    text-indent: -2.5em;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.lemon {
+    background-color: yellow;
+}
+
+.grape {
+    background-color: purple;
+}
+
+.penguin {
+    background-image: url(http://goo.gl/e2x4ZK);
+    background-repeat: no-repeat;
+}
+
+.inline {
+    display: inline;
+}
