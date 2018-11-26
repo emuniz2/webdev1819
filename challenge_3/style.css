@@ -4,14 +4,9 @@ body {
     background-position: center top;
 }
 
-div {
-    border-style: ridge;
-    border-width: 10px;
-    border-color: lightgreen;
-    width: 250px;
-    height: 166.640625px;
+.border1 {
+    border-radius: 10px;
 }
-
 h1 {
     font-size: 75px;
     text-align: center
@@ -27,4 +22,8 @@ h1 {
 
 #button3 {
     margin-left: 100px;
+}
+
+.arial {
+    font-family: arial;
 }

@@ -1,0 +1,16 @@
+.display-4 {
+    font-family: Comic Sans MS;
+}
+
+.lead {
+    font-family: lead;
+}
+
+.next {
+    display: inline-block;
+}
+
+.padding {
+    padding-top: 50px;
+    padding-left: 200px;
+}
