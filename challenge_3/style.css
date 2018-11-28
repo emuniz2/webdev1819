@@ -11,19 +11,9 @@ h1 {
     font-size: 75px;
     text-align: center
 }
-
-#button1 {
-    margin-left: 100px;
+.ComicSansMS {
+    font-family: Comic Sans MS;
 }
-
-#button2 {
-    margin-left: 100px;
-}
-
-#button3 {
-    margin-left: 100px;
-}
-
-.arial {
-    font-family: arial;
+.display {
+    display: inline-block;
 }

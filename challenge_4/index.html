@@ -3,9 +3,34 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
         <title></title>
     </head>
-    <body>
+    <body style="background-color: lightyellow">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Link</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        
         <div class="jumbotron">
             <h1 class="display-4">Salvadorian Club</h1>
             <p class="lead">Salva is a dance club that performs latin dances such as bachata and salsa. </p>
@@ -16,49 +41,42 @@
             </p>
         </div>
         
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>    
-                </ul>
-            </div>  
-        </nav>
-    
-        <div class="card next " style="width: 18rem; background-color: lightblue">
-            <img class="card-img-top" src="https://ak2.picdn.net/shutterstock/videos/10739222/thumb/1.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Juan Espinoza</h5>
-                <p class="card-text">President of Salva Club who helps to teach dances as well as help outside of club</p>
+        <div style="text-align: center">
+            <div class="card next font" style="width: 18rem; background-color: lightblue" id="div">
+                <img class="card-img-top" src="https://ak2.picdn.net/shutterstock/videos/10739222/thumb/1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Juan Espinoza</h5>
+                    <p class="card-text">President of Salva Club who helps to teach dances as well as help outside of club</p>
+                </div>
+            </div>
+
+            <div class="card next font" style="width: 18rem; background-color: lightgreen">
+                <img class="card-img-top" src="https://ak2.picdn.net/shutterstock/videos/10739222/thumb/1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Bianca Alvarez</h5>
+                    <p class="card-text">Vice-President of Salva Club-helps to teach choreography to those that struggle</p>
+                </div>
+            </div>
+
+            <div class="card next font" style="width: 18rem; background-color: lightpink;">
+                <img class="card-img-top" src="https://ak2.picdn.net/shutterstock/videos/10739222/thumb/1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Leo Solano</h5>
+                    <p class="card-text">Helps out presidents with club stuff and also helps out with teaching the dance</p>
+                </div>
             </div>
         </div>
-
-        <div class="card next" style="width: 18rem; background-color: lightgreen">
-            <img class="card-img-top" src="https://ak2.picdn.net/shutterstock/videos/10739222/thumb/1.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Bianca Alvarez</h5>
-                <p class="card-text">Vice-President of Salva Club who is very nice, helps to teach the dance to anyone struggling</p>
+       <br>
+       <br>
+        
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">If you have any questions, please enter your email down below</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-        </div>
-
-        <div class="card next" style="width: 18rem; background-color: lightpink;">
-            <img class="card-img-top" src="https://ak2.picdn.net/shutterstock/videos/10739222/thumb/1.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Leo Solano</h5>
-                <p class="card-text">Helps out presidents with club stuff and also helps out with teaching the dance</p>
-            </div>
-        </div>
-
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
     </body>
 </html>

@@ -2,6 +2,10 @@
     font-family: Comic Sans MS;
 }
 
+.font {
+    font-family: Comfortaa;
+}
+
 .lead {
     font-family: lead;
 }
@@ -13,4 +17,13 @@
 .padding {
     padding-top: 50px;
     padding-left: 200px;
+}
+
+.jumbotron {
+    height: 320px;
+    background-color: lightblue;
+}
+
+.card {
+    margin-right: 200px;
 }
