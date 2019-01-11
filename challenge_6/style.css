@@ -1,0 +1,36 @@
+.h-1 {
+    font-family: Comic Sans MS;
+}
+
+#body1 {
+    background-color: #806459;
+}
+
+#body2 {
+    background-color: #2F4F4F;
+}
+
+.carousel-inner {
+      width: 50%;
+      height: 50%;
+}
+
+img {
+    width: 960px;
+    height: 510px;
+}
+
+.details {
+    border-style: solid;
+    border-width: thin;
+}
+
+.description {
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px;
+    background-color: #E7D67A;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+}
