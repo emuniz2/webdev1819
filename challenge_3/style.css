@@ -2,6 +2,7 @@ body {
     background-image: url("http://wallpaperhd.online/upload/images/1521086292085/css-fade-background-css-fade-image-css-fade-in-red-fire-600x350.jpg");
     background-size: cover;
     background-position: center top;
+    font-family: 'Noto Serif', serif;
 }
 
 .border1 {
@@ -16,4 +17,5 @@ h1 {
 }
 .display {
     display: inline-block;
+    text-align: center;
 }
