@@ -1,0 +1,4 @@
+#canvasid {
+    border: black 10px solid;
+    background: linear-gradient(red, yellow, red);
+}
