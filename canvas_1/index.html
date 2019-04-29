@@ -9,58 +9,77 @@
             <script>
                 var canvas = document.querySelector("#canvasid");
                 var context = canvas.getContext("2d");
+                var xPos = 2;
+                var xPosY = 22;
+                var xP = 200;
+                var xY= 220;
+                var xX = 250;
+                var xS = 260;
+                var xN = 290;
+                var xL = 310;
+                var xt = 255;
+                function drawLetter() {
+                    context.clearRect(0, 0, 400, 400);
+
+                    context.rect(xPos, 100, 20, 200);
+                    context.rect(xPosY,100,80,20);
+                    context.rect(xPosY, 190, 55, 20);
+                    context.rect(xPosY, 280, 80, 20);
+                    context.stroke();
+                    
+                    xPos += 1;
+                    xPosY += 1;
+                    xP += 1;
+                    xY += 1;
+                    xX += 1;
+                    xS += 1;
+                    xN += 1;
+                    xL += 1;
+                    xt += 1;
+                    if (xPos > 80)
+                    {
+                        xPos = 2;
+                        xPosY = 22;
+                        xP = 200;
+                        xY= 220;
+                        xX = 250;
+                        xS = 260;
+                        xN = 290;
+                        xL = 310;
+                        xt = 255;
+                    }
+                    requestAnimationFrame(drawLetter);
+                    context.fill();
+                    context.clearRect(0, 0, 80, 400);
+                }
+                drawLetter();
                 
+                function drawMLetter() {
+                    context.moveTo(xP,100);
+                    context.lineTo(xP,300);
+                    context.lineTo(xY,300);
+                    context.lineTo(xY,180);
+                    context.lineTo(xX,230);
+                    context.lineTo(xS,230);
+                    context.lineTo(xN,180);
+                    context.lineTo(xN,300);
+                    context.lineTo(xL,300);
+                    context.lineTo(xL,100);
+                    context.lineTo(xN,100);
+                    context.lineTo(xt,180);
+                    context.lineTo(xY,100);
+                    context.closePath();
+                    context.fill();
+                    context.stroke();
+                    
+                    
+                    context.fill();
+                    context.clearRect(0, 0, 80, 400);
+                    
                 
-                
-                context.fillStyle = "black";
-                context.lineWidth = 1;
-                context.moveTo(50,100);
-                context.lineTo(50,300);
-                context.lineTo(70,300);
-                context.lineTo(70,100);
-                context.closePath();
-            
-                context.moveTo(70,100);
-                context.lineTo(150,100);
-                context.lineTo(150,120);
-                context.lineTo(70,120);
-                context.closePath();
-                
-                context.moveTo(70,190);
-                context.lineTo(125,190);
-                context.lineTo(125,210);
-                context.lineTo(70,210);
-                context.closePath();
-                
-                context.moveTo(70,280);
-                context.lineTo(150,280);
-                context.lineTo(150,300);
-                context.lineTo(70,300);
-                context.closePath();
-                
-                
-                context.moveTo(200,100);
-                context.lineTo(200,300);
-                context.lineTo(220,300);
-                context.lineTo(220,180);
-                context.lineTo(250,230);
-                context.lineTo(260,230);
-                context.lineTo(290,180);
-                context.lineTo(290,300);
-                context.lineTo(310,300);
-                context.lineTo(310,100);
-                context.lineTo(290,100);
-                context.lineTo(255,180);
-                context.lineTo(220,100);
-                context.closePath();
-                context.fill();
-                
-                context.stroke();
-                
-                
-                
-                
-                
+                }
+                drawMLetter();
+
             </script>
             
             

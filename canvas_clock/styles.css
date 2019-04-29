@@ -1,0 +1,4 @@
+#canvas {
+    border: black 10px solid;
+    background: linear-gradient(red, orange, yellow, green, blue, purple);
+}
