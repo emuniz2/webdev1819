@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Brick Breaker Game</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            #myCanvas {
+                margin: 0 auto;
+                background: #eee;
+                display: block;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <center><canvas id="myCanvas" width="480" height="320" style="background: #eee; display: block; ">
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var ctx = canvas.getContext("2d");
+                var x = canvas.width/2;
+                var y = canvas.height - 30;
+                var dx = 1;
+                var dy = -1;
+                var ballRadius = 10;
+                var paddleHeight = 10;
+                var paddleWidth = 75;
+                var paddleX = (canvas.width - paddleWidth)/2;
+                var rightPressed = false;
+                var leftPressed = false;
+                var bricks = [];
+                var brickRowCount = 3;
+                var brickColumnCount = 5;
+                var brickWidth = 75;
+                var brickHeight = 20;
+                var brickPadding = 10;
+                var brickOffsetTop = 30;
+                var brickOffsetLeft = 30;
+                var brickX = (c*(brickWidth + brickPadding)) + brickOffsetLeft;
+                var brickY = (r*(brickHeight + brickPadding)) + brickOffsetTop;
+
+                function drawBall(){
+                	ctx.beginPath();
+                	ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+                	ctx.fillStyle = "red";
+                	ctx.fill();
+                	ctx.closePath();
+                } 
+                
+                function drawPaddle(){
+                	ctx.beginPath();
+                	ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+                	ctx.fillStyle = "red";
+                	ctx.fill();
+                	ctx.closePath();
+                }
+
+                
+                function draw(){
+                	ctx.clearRect(0, 0, canvas.width, canvas.height);
+                	drawBricks();
+                	drawBall();
+                	drawPaddle();
+                	x += dx;
+                	y += dy;
+                	if(y + dy < 0){
+                    	dy = -dy;
+                    }
+                    if(y + dy > 320){
+                    	dy = -dy;
+                    }
+
+                	if(x + dx > canvas.width - ballRadius || x + dx < ballRadius){
+                    	dx = -dx;
+                    }
+                }
+                
+                function keyDownHandler(e){
+                	if(e.keyCode == 39){
+                		rightPressed = true;
+                	} else if(e.keyCode == 37){
+                		leftPressed = true;
+                	}
+                	if(rightPressed && paddleX < canvas.width-paddleWidth){
+                    	paddleX += 10;
+                    } else if(leftPressed && paddleX > 0){
+                    	paddleX -= 10;
+                }
+                }
+                
+                function keyUpHandler(e){
+                	if(e.keyCode == 39){
+                		rightPressed = false;
+                	} else if(e.keyCode == 37){
+                		leftPressed = false;
+                	}
+                	if(rightPressed && paddleX < canvas.width-paddleWidth){
+                    	paddleX += 10;
+                    } else if(leftPressed && paddleX > 0){
+                    	paddleX -= 10;
+                }
+                }
+                if (y + dy < ballRadius){
+                	dy = -dy;
+                } else if (y + dy > canvas.height-ballRadius){
+                	alert("Game Over");
+                	document.location.reload();
+                }
+
+                
+                for(var c = 0; c < brickColumnCount; c++){
+                	bricks[c] = [];
+                	for(var r = 0; r < brickRowCount; r++){
+                		bricks[c][r] = { x:brickX, y:brickY };
+                	}
+                }
+                function drawBricks() {
+                	for(var c = 0; c < brickColumnCount; c++){
+                		for(var r = 0; r < brickRowCount; r++){
+                			bricks[c][r].x = brickX;
+                			bricks[c][r].y = brickY;
+                			ctx.beginPath();
+                			ctx.rect(brickX, brickY, brickWidth, brickHeight);
+                			ctx.fillStyle = "black";
+                			ctx.fill();
+                			ctx.closePath();
+                		}
+                	}
+                }
+
+                document.addEventListener("keydown", keyDownHandler, false);
+                document.addEventListener("keyup", keyUpHandler, false);
+
+                setInterval(draw, 10);
+
+
+            </script>
+        </canvas></center>
+    </body>
+</html>
