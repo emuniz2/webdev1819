@@ -1,0 +1,28 @@
+.tab {
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+body {
+    background-color: #9FAEA6;
+}
+
+.bC {
+    background-color: blue;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.next {
+    display: inline-block;
+    background-color: #E2E2D2;
+    margin-right: 200px;
+}
+
+.font {
+    font-family: 'Oswald', sans-serif;
+}
+.card-img-top {
+    height: 200px;
+}
